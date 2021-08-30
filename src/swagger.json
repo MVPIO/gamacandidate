@@ -1,0 +1,118 @@
+{
+  "openapi": "3.0.0",
+
+  "info": {
+    "title": "API do Cadastro Candidato",
+    "description": "API feita para o projeto proposto pela Gama Academy, onde precisou fazer um cadastro de candidato.",
+    "version": "0.0.1"
+  },
+
+  "servers": [
+    {
+      "url": "http://localhost:5000",
+      "description": "ambiente de desenvolvimento"
+    },
+    {
+      "url": "",
+      "description": "ambiente de produção"
+    }
+  ],
+
+  "paths": {
+    "/register": {
+      "post": {
+        "summary": "Cadastro de candidato",
+        "description": "Rota de cadastro de usuário, recebe: nome, genêro, email, cep, contatos, endereço e etc",
+        "tags": ["candidato"],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "gender": {
+                    "type": "string"
+                  },
+                  "cep": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string"
+                  },
+                  "id": {
+                      "type": "ObjectId (auto incremento)"
+                  },
+                  "cargo": {
+                      "type": "string"
+                  },
+                  "dataNas": {
+                      "type": "string"
+                  },
+                  "estadocivil": {
+                      "type": "string"
+                  },
+                  "endereco": {
+                      "type": "string"
+                  },
+                  "bairro": {
+                      "type": "string"
+                  },
+                  "cidade": {
+                      "type": "string"
+                  },
+                  "telefone1": {
+                      "type": "string"
+                  },
+                  "telefone2": {
+                      "type": "string"
+                  },
+                  "celular": {
+                      "type": "string"
+                  },
+                  "identidade": {
+                      "type": "string"
+                  },
+                  "cpf": {
+                      "type": "string"
+                  },
+                  "veiculo": {
+                      "type": "string"
+                  },
+                  "habilitacao": {
+                      "type": "string"
+                  }
+                }
+              },
+              "examples": {
+                "Cadastro Do Autor": {
+                  "value": {
+                    
+                    "name": "Marcos Vinicius",
+                    "gender": "Masculino Cis",
+                    "cep": "00000-000",
+                    "email": "marcos.vini@gmail.com",
+                    "cargo": "Programador",
+                    "dataNas": "00/00/0000",
+                    "estadocivil": "solteiro",
+                    "endereco": "Rua José",
+                    "bairro": "Novo Aliança",
+                    "cidade": "Sarandi",
+                    "telefone1": "00 0000 0000",
+                    "telefone2": "00 0000 0000",
+                    "celular": "00 00000 0000",
+                    "identidade": "00 000 000 0",
+                    "cpf": "000 000 000 - 00",
+                    "veiculo": "sim",
+                    "habiltacao": "AB"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
