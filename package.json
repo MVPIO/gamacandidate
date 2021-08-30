@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "desenvolvimento do backend",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "MVPIO"
+  },
+  "author": "Marcos",
+  "license": "ISC",
+  "devDependencies": {
+    "mongoose": "^6.0.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose-auto-increment": "^5.0.1",
+    "swagger": "^0.7.5",
+    "swagger-ui-express": "^4.1.6"
+  }
+}
